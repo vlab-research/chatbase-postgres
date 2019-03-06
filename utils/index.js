@@ -1,12 +1,6 @@
-function getRandomSeed() {
-  return Math.floor(Math.random() * Math.floor(process.env.SEED || 100));
-}
 
-function validationError() {
-  throw new TypeError('The database configuration object is strictly required!');
-}
+class ChatbaseValidationError extends TypeError {};
 
 module.exports = {
-  getRandomSeed,
-  validationError
+  ChatbaseValidationError
 }
