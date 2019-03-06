@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Simple tool to create key/value records on a PostGres database.",
   "main": "./lib",
+  "scripts": {
+    "_test": "mocha -w --colors --timeout 5000 lib/**/*.test.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/vlab-research/chatbase-postgres.git"
@@ -14,6 +17,11 @@
   },
   "homepage": "https://github.com/vlab-research/chatbase-postgres#readme",
   "dependencies": {
+    "farmhash": "2.1.0",
     "pg": "7.8.1"
+  },
+  "devDependencies": {
+    "chai": "4.2.0",
+    "mocha": "6.0.2"
   }
 }
