@@ -1,6 +1,6 @@
 {
   "name": "@vlab-research/chatbase-postgres",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Simple tool to create key/value records on a PostGres database.",
   "main": "./lib",
   "scripts": {
